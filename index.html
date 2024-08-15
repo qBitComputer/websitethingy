@@ -1,9 +1,19 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<title>cookie clicker knockoff type game</title>
 	</head>
 	<body>
 		<h1>Cookie clicker :D</h1>
-		<button onclick="click()">click!</button>
+		<button onclick="clicker()" id="click">click!</button>
 	</body>
+	<script>
+		var click=0; 
+		var c = document.getElementById("click");
+		function clicker(){
+    		click+=1;
+    		c.innerHTML = click;
+		}
+
+	</script>
 </html>
